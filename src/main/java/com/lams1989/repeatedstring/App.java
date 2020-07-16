@@ -4,10 +4,10 @@ public class App
 {
     public static void main( String[] args )
     {
-    	String s = "ella";
-		int n = 34;
+    	String s = "a";
+		long n = 1000000000000L;
 
-		int a = RepeatedString.repeatedString(s, n);
+		long a = RepeatedString.repeatedString2(s, n);
 		System.out.println(a);
     }
 }
