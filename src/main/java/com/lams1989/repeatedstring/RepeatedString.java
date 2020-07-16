@@ -1,28 +1,9 @@
 package com.lams1989.repeatedstring;
 
-public class RepeatedString {
-	public static long repeatedString(String s, long n) {
-		long count = 0;
-		char a = 97;
-		String aux = "";
-		if (!s.contains("a")) {
-			return 0;
-		}
-		while (aux.length() < n) {
-
-			aux += s;
-		}
-		for (long i = 0; i < n; i++) {
-			if (aux.charAt((int) i) == a) {
-				count++;
-			}
-		}
-
-		System.out.println(aux);
-		return count;
-	}
+public class RepeatedString implements RepeatedStringInterface{
 	
-	static long repeatedString2(String s, long n) {
+	@Override
+	public long repeatedString2(String s, long n) {
 
 	    int i=0;
 	    long count = 0;
@@ -44,4 +25,26 @@ public class RepeatedString {
 
 	return count;
 	}
+	
+	public static long repeatedString(String s, long n) {
+		long count = 0;
+		char a = 97;
+		String aux = "";
+		if (!s.contains("a")) {
+			return 0;
+		}
+		while (aux.length() < n) {
+
+			aux += s;
+		}
+		for (long i = 0; i < n; i++) {
+			if (aux.charAt((int) i) == a) {
+				count++;
+			}
+		}
+
+		System.out.println(aux);
+		return count;
+	}
+	
 }

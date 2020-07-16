@@ -1,13 +1,14 @@
 package com.lams1989.repeatedstring;
 
-public class App 
-{
-    public static void main( String[] args )
-    {
-    	String s = "a";
-		long n = 1000000000000L;
+public class App {
+	
+	public static void main( String[] args ) {
+    	RepeatedString read = new RepeatedString();
+		
+    	String s = "aba";
+		long n = 100;
 
-		long a = RepeatedString.repeatedString2(s, n);
-		System.out.println(a);
+		System.out.println(read.repeatedString2(s, n));
+		
     }
 }
