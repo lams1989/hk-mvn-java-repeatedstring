@@ -5,8 +5,8 @@ public class App {
 	public static void main( String[] args ) {
     	RepeatedString read = new RepeatedString();
 		
-    	String s = "aba";
-		long n = 100;
+    	String s = "ella";
+		long n = 134;
 
 		System.out.println(read.repeatedString2(s, n));
 		

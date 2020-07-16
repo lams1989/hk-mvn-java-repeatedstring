@@ -5,36 +5,40 @@ import junit.framework.TestCase;
 public class RepeatedStringTest extends TestCase {
 
 	public static void test1() {
-		String s = "aba";
-		int n = 10;
+RepeatedString read = new RepeatedString();
+		
+    	String s = "aba";
+		long n = 100;
 
-		int a = RepeatedString.repeatedString(s, n);
+		assertEquals(67,read.repeatedString2(s, n));
 
-		assertEquals(8, a);
+		
 	}
 	public static void test2() {
-		String s = "aba";
-		int n = 10;
+		RepeatedString read = new RepeatedString();
 
-		int a = RepeatedString.repeatedString(s, n);
+		String s = "alaba";
+		long n = 10;
 
-		assertEquals(8, a);
+		assertEquals(6,read.repeatedString2(s, n));
+
+		
 	}
 	public static void test3() {
+		RepeatedString read = new RepeatedString();
+
 		String s = "lacra";
-		int n = 50;
+		long n = 50;
 
-		int a = RepeatedString.repeatedString(s, n);
-
-		assertEquals(20, a);
+		assertEquals(20, read.repeatedString2(s, n));
 	}
 	public static void test4() {
+		RepeatedString read = new RepeatedString();
+
 		String s = "ella";
-		int n = 34;
+		long n = 134;
 
-		int a = RepeatedString.repeatedString(s, n);
-
-		assertEquals(9, a);
+		assertEquals(33, read.repeatedString2(s, n));
 	}
 	
 }
