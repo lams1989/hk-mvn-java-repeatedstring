@@ -37,13 +37,13 @@ public class RepeatedString implements RepeatedStringInterface{
 
 			aux += s;
 		}
-		for (long i = 0; i < n; i++) {
-			if (aux.charAt((int) i) == a) {
+		for (int i = 0; i < n; i++) {
+			if (aux.charAt(i) == a) {
 				count++;
 			}
 		}
 
-		System.out.println(aux);
+		
 		return count;
 	}
 	

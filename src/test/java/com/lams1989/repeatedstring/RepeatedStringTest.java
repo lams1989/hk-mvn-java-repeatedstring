@@ -7,8 +7,8 @@ public class RepeatedStringTest extends TestCase {
 	public static void test1() {
 RepeatedString read = new RepeatedString();
 		
-    	String s = "aba";
-		long n = 100;
+    	String s = "a";
+		long n = 10000000000000000L;
 
 		assertEquals(67,read.repeatedString2(s, n));
 
